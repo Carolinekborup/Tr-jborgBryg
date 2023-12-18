@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="DA">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>TrøjborgBryg forside</title>
+</head>
+<body>
+
+<!--Header-->
+<header class="header">
+  <nav class="navbar">
+      <a href="index.html" class="nav-logo">
+          <img src="Images/Logo.jpg" alt="Logo">
+      </a>
+      <!--Navigation-->
+      <ul class="nav-menu">
+          <li class="nav-item">
+            <!--Menupunkt "Bryggeriet"-->
+              <a href="404.html" class="nav-link">Bryggeriet</a>
+              <!-- Dropdown content til menupunkt "bryggeriet" -->
+              <ul class="sub-menu">
+                <li><a href="404.html" class="nav-link">Events</a></li>
+                <li><a href="404.html" class="nav-link">Rundvisning</a></li>
+                <li><a href="404.html" class="nav-link">Ølsmagning</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+              <!--Menupunkt "Sortiment"-->
+              <a href="404.html" class="nav-link">Sortiment</a>
+              <!-- Dropdown content til menupunkt "Sortiment" -->
+              <ul class="sub-menu">
+                  <li><a href= "#alkoholfri_varianter" class="nav-link">Alkoholfri</a></li>
+                  <li><a href="404.html" class="nav-link">IPA</a></li>
+                  <li><a href="404.html" class="nav-link">Sæson øl</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <!--Menupunkt "om os"-->
+              <a href="404.html" class="nav-link">Om os</a>
+              <!-- Dropdown content til menupunkt "Om os"-->
+              <ul class="sub-menu">
+                <li><a href="404.html" class="nav-link">Historie</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+             <!--Menupunkt "kontakt"-->
+              <a href= "404.html" class="nav-link">Kontakt</a>
+              <!-- Dropdown content til menupunkt "Kontakt"-->
+              <ul class="sub-menu">
+                <li><a href= "#kontakt" class="nav-link">Åbningstider</a></li>
+            </ul>
+          </li>
+      </ul>
+    
+      <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+  </nav>
+</header>
+<!--Header slut-->
+
+  <!--Billeder på forside START-->
+   
+  <div class="img-container">
+    <!--Billede af bryggeri-->
+  <a href="404.html"><img class="Bryggeri_img" src="Images/Bryggeri_tekst.jpg" alt="Bryggeri"></a>
+ 
+ 
+    <!--Billede af Alkoholfri øl-->
+  <a href="#alkoholfri_varianter"><img class="Blomst_img" src="Images/oel-tekst.jpg" alt="Blomst"></a>
+</div>
+
+<div class="img-container">
+    <!--Billede af dåser-->
+  <a href="404.html"><img class="cafe_img" src="Images/daaser_tekst.jpg" alt="dåser"></a>
+
+    <!--Billede af cafe -->
+  <a href="404.html"><img class="daaser_img" src="Images/cafe_tekst.jpg" alt="cafe"></a>
+</div>
+
+
+
+
+    
+<!--Billeder på forside SLUT-->
+
+<!-- De alkoholfrie varianter -->
+<article>
+  <h2 class="h2_forside">Nyhed!</h2>
+  <h3 class="h3_forside" id="alkoholfri_varianter">Den helt nye alkoholfrie øl serie</h3>
+  <p class="paragraph_forside">Vi har netop lanceret en helt ny serie af alkoholfrie øl fyldt med lækker smag og god kvalitet.
+    <br>Hvilken en er mon din favorit? </p>
+
+  <!-- Flex container for images and text -->
+  <div class="flex-container">
+    <!-- Pilsner -->
+    <div class="box_forside">
+      <a href="pilsner.html"><img src="Images/Pilsner-removebg-preview.png" class="img_forside" alt="pilsner"></a>
+      <p class="h3_forside">Pilsner</p>
+      <a class="paragraph_forside" href="pilsner.html">Læs mere</a>
+    </div>
+
+    <!-- Sour øl -->
+    <div class="box_forside">
+
+      <a href="sour.html"><img src="Images/hindbar-removebg-preview.png" class="img_forside" alt="hindbær"></a>
+      <p class="h3_forside">Sour beer</p> 
+      <a class="paragraph_forside" href="sour.html">Læs mere</a>
+    </div>
+
+    <!-- IPA øl -->
+    <div class="box_forside">
+      <a href="ipa.html"><img src="Images/IPA-removebg-preview.png" class="img_forside" alt="IPA"></a>
+      <p class="h3_forside">IPA</p>
+      <a class="paragraph_forside" href="ipa.html">Læs mere</a>
+    </div>
+  </div>
+</article>
+
+     
+    <!-- Footer -->
+    <footer class="footer">
+
+      <hr class="footer__hr">
+      
+      <div class="footer__sections container">
+        <div class="footer__section">
+          <span class="footer__title">Åbningstider</span>
+          
+          <a href="#" class="footer__link">
+        Mandag: Lukket <br>
+        Tirsdag: Lukket <br>
+        Onsdag: 14-23 <br>
+        Torsdag: 14-23 <br>
+        Fredag: 14-00 <br>
+        Lørdag: 14-00 <br>
+        Søndag: Lukket
+          </a>
+        </div>
+  
+        <div class="footer__section">
+          <span id="kontakt" class="footer__title">Adresse</span>
+            <span class="footer__link">Tordenskjoldsgade 144, 8200 Aarhus N</span>
+        </div>
+        <div class="footer__section">
+            <span class="footer__title">Email</span>
+          <a href="#" class="footer__link">TroejborgBryg@kontakt.dk</a></div>
+        <div class="footer__section">
+          <span class="footer__title">Tlf.nr</span>
+          <a href="#" class="footer__link">+45 12 34 56 78</a></div>
+    
+  
+        </div>
+  
+        <div class="footer__section_social">
+          <span class="footer__title">Sociale medier</span>
+          <a href="https://www.facebook.com/"><img src="Images/facebook.jpg" class="social_icons" alt="Facebook"></a>
+          <a href="https://www.instagram.com/"><img src="Images/insta.jpg" class="social_icons" alt="Instagram"></a>
+          <a href="https://www.Linkedin.com/"><img src="Images/linked.jpg" class="social_icons" alt="LinkedIn"></a>
+      
+      </div>
+    </footer>
+  
+  <!--Footer slut-->
+  <script src="script.js"></script>
+  </body>
+  </html>

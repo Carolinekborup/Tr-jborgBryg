@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e7e7ed;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style: none;
+}
+/* Styling af links*/
+a {
+    text-decoration: none;
+    
+}
+
+/*Styling af header linje*/
+.header{
+    border-bottom: 1px solid #E2E8F0;
+    
+  
+}
+
+/* Dropdown effekt*/
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+ 
+  
+}
+
+.nav-item:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  padding: 10px;
+  text-align: left;
+}
+
+.sub-menu li:hover {
+  background-color: #e7e7ed; 
+}
+
+
+
+
+/* hvor burger knappen er placeret på siden */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    position: fixed;
+    border: 1px solid black;
+
+    
+}
+
+.hamburger {
+    display: none;
+}
+
+/* hvordan burger knappen ser ud */
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+    
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+
+    
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: x-large;
+    font-weight: 400;
+    color: #495736;
+    font-family: 'copperplate';
+    
+    
+    
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+/* Styling af logo*/
+.nav-logo img {
+  width: 15%; 
+  height: auto; 
+  margin-left: 5%;
+}
+/* baggrund af burgermenuen */
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 0rem;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+
+        
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    /* burger menu*/
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+/*Styling af overskrifter og tekst på forside*/
+
+.h1_forside{
+  font-size: xx-large;
+  text-align: center;
+  color: #495736;
+  padding-top: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.h2_forside{
+  font-size: xx-large;
+  color: #495736;
+  text-align: center;
+  padding: 1%;
+  font-family: 'copperplate';
+  
+
+}
+.h3_forside{
+  font-size: x-large;
+  color: #495736;
+  text-align: center;
+  padding: 1%;
+  font-family: 'copperplate';
+}
+
+.paragraph_forside{
+  font-size: x-large;
+  color: #495736;
+  text-align: center;
+  line-height: 200%;
+  font-family: 'copperplate'
+}
+
+/*Styles for tekst på artikler om øl */
+.h1_artikler{
+  font-size: xx-large;
+  text-align: center;
+  color: #495736;
+  padding-top: 25%;
+  font-family: 'copperplate';
+}
+
+.h2_artikler{
+  font-size: x-large;
+  color: #495736;
+  text-align: left;
+  padding: 1%;
+  font-family: 'copperplate';
+  padding-left: 5%;
+}
+
+.h3_artikler{
+  font-size: x-large;
+  color: #495736;
+  text-align: left;
+  padding: 1%;
+  font-family: 'copperplate';
+  padding-left: 5%;
+}
+.paragraph_artikler{
+  font-size:medium;
+  color: black;
+  text-align: left;
+  line-height: 200%;
+  font-family: 'copperplate';
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+/**********/
+/*Billeder*/
+/**********/
+
+/*Billeder på forsiden*/
+
+.Bryggeri_img{
+  width: 100%; /* Set the width to 100% for responsiveness */
+  max-width: 72rem; /* Set a maximum width for larger screens */
+  border: 3px solid white;
+  padding-top: 8%;
+  
+  
+  }
+
+.Blomst_img{
+  width: 100%; /* Set the width to 100% for responsiveness */
+  max-width: 72rem; /* Set a maximum width for larger screens */
+  border: 3px solid white;
+  padding-top: 8%;
+}
+.cafe_img,
+.daaser_img {
+  width: 100%; /* Set the width to 100% for responsiveness */
+  max-width: 72rem; /* Set a maximum width for larger screens */
+  border: 3px solid white;
+
+}
+
+
+
+/* Media query for større skærme (forside) */
+@media only screen and (min-width: 768px) {
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; /* Optional: Adjust spacing between images */
+  }
+
+  .Bryggeri_img,
+  .Blomst_img,
+  .cafe_img,
+  .daaser_img {
+    margin-top: 0; /* Remove margin on larger screens */
+  }
+}
+
+/*Flexbox om tekst til øl*/
+/* Flex bokse med øl */
+.flex-container {
+  display: flex;
+  flex-direction: column; 
+  padding-left: 10%;
+  
+  
+}
+
+.box_forside {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  border: 1px solid black;
+  margin: 2%;
+  max-width: 300px; 
+}
+
+.img_forside {
+  width: 100%;
+  max-width: 150px; 
+  height: auto;
+  
+}
+
+/* Media query for større skærme */
+@media (min-width: 768px) {
+  .flex-container {
+    flex-direction: row; /* Skifter til "row" på større skærme */
+    padding-left: 15% ;
+  }
+
+  .box_forside {
+    flex: 1;
+    margin: 2%;
+  }
+
+  .h1_artikler{
+    font-size: xxx-large;
+    text-align: center;
+    color: #495736;
+    padding-top: 10%;
+    font-family: 'copperplate';
+}
+}
+
+
+  /*Styling af billeder på øl artikler*/
+  .flex-container-artikel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .flex-item-infographic {
+    flex: 1; 
+  }
+  
+  .infographic {
+    max-width: 100%; 
+  }
+  
+  .flex-box-tekst-artikel {
+    flex: 1; 
+    text-align: left; 
+    margin: 20px; 
+    padding: 20px;
+    padding-left: 5%;
+  }
+  
+  /* Media query for større skærme */
+  @media (min-width: 768px) {
+    .flex-container-artikel {
+      flex-direction: row;
+      align-items: center; 
+    }
+  
+    .flex-item-infographic,
+    .flex-box-tekst-artikel {
+      width: 50%; 
+      margin: 0; 
+    }
+  }
+/*******************************************************/
+/*Styling af billeder og box på artikel om alkoholfri øl*/
+/*******************************************************/
+
+/* Style for boxen  */
+.info-box {
+  padding: 10%;
+  margin: 20%;
+  background-color: #495736;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Style for listen "Fordele ved alkoholfrit"*/
+.info-list {
+
+  list-style-type: none;
+  padding: 0;
+  background-color: #495736;
+  color: #E2E8F0;
+  font-family: 'copperplate';
+  line-height: 2;
+  font-size: small;
+}
+
+.info-list-item {
+  margin-bottom: 8px;
+  background-color: #495736;
+}
+
+/*Style for h2 i artiklen om alkoholfri*/
+.h2_artikel_alkoholfri_hoejre{
+  font-size: x-large;
+  color: #495736;
+  font-family: 'copperplate';
+  
+  
+}
+
+.h2_artikel_alkoholfri_venstre{
+  font-size: x-large;
+  color: #495736;
+  font-family: 'copperplate';
+  padding-left: 10%;
+}
+
+/*Style for h3 i artiklen om alkoholfri*/
+.h3_artikler_alkoholfri{
+  font-family: 'copperplate';
+  font-size: medium;
+  background-color: #495736;
+  color: #E2E8F0;
+  padding-bottom: 3%;
+}
+
+/*Style for paragraph i artiklen om alkoholfri*/
+.paragraph_artikler_left{
+  font-size:medium;
+  color: black;
+  text-align: left;
+  line-height: 200%;
+  font-family: 'copperplate';
+  padding-left: 10%;
+  padding-bottom: 2%;
+}
+
+.paragraph_artikler_right{
+  font-size:medium;
+  color: black;
+  line-height: 200%;
+  font-family: 'copperplate';
+  padding-bottom: 2%;
+}
+
+/*Style for billeder i artiklen om alkoholfri*/
+.alkoholfri_ol_img, .alkoholfri_skov_img
+{
+   width: 90%;
+   height: auto;
+   padding-left: 10%;
+   
+
+}
+
+
+
+/* Media query for larger screens */
+@media only screen and (min-width: 768px) {
+  .info-box{
+    padding: 2%;
+    margin: 5%;
+    width: 400px;
+    margin-left: 20%;
+    
+  
+  }
+
+  .info-list {
+    /* Add more padding for the list on larger screens */
+    padding: 10%;
+   
+   
+  }
+
+  .info-list-item {
+    /* Add more space between list items on larger screens */
+    margin-bottom: 12px;
+    
+  }
+  .h2_artikel_alkoholfri_hoejre{
+    font-size: x-large;
+    margin-bottom: 60%;
+    padding-left: 5%;
+  }
+ 
+
+  .h3_artikler_alkoholfri {
+    font-size: large;
+    padding-bottom: 1%;
+    
+  }
+  .paragraph_artikler_right{
+    padding-left: 5%;
+    margin-top: -350px;
+    
+  }
+
+ 
+
+  .alkoholfri_ol_img {
+    /* Adjust width and padding for larger screens */
+    width: 100%;
+    margin-left: 100%;
+   
+   
+    
+  }
+  .alkoholfri_skov_img {
+    /* Adjust width and padding for larger screens */
+    width: 100%;
+   padding-right: 10%;
+  }
+}
+/****** Styles for 404 side******/
+
+.h1_404{
+  font-size: xx-large;
+  text-align: center;
+  color: #495736;
+  padding-top: 17%;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.paragraph_404{
+  font-size: x-large;
+  text-align: center;
+  color: #495736;
+  padding-top: 10%;
+  font-family: 'copperplate';
+}
+
+/* Footer styles */
+
+/* ---- START FOOTER ---- */
+.footer {
+  
+  font-size: 0.85rem;
+  padding: 20px 0;
+  line-height: 1.6;
+  margin-top: auto;
+  background-color: #495736;
+  
+  
+ 
+}
+
+.footer__text,
+.footer__link,
+.footer__title {
+  color: #000000;
+  padding: 3px 15px;
+  display: block;
+  color: #E2E8F0;
+  
+}
+
+.footer__hr {
+  height: 1px;
+  border: none;
+  background-color: #495736;
+
+  
+}
+
+.footer__sections {
+  display: flex;
+  flex-direction: column; /* Mobile-first: Stack sections vertically */
+  align-items: center; /* Mobile-first: Center the content horizontally */
+  background-color: #495736;
+  
+}
+
+
+.footer__section, .footer__section_social {
+  box-sizing: border-box;
+  width: 100%; /* Mobile-first: Full width on small screens */
+  padding: 15px 0;
+  flex-shrink: 0;
+  background-color: #495736;
+  font-size: small;
+  font-family: 'copperplate';
+  text-align: center; 
+ 
+}
+
+.footer__title {
+  font-weight: bold;
+  font-size: medium;
+  font-family: 'copperplate';
+  margin-bottom: 10px;
+  background-color: #495736;
+  color: #E2E8F0;
+}
+
+.footer__link {
+  text-decoration: none;
+  background-color: #495736;
+}
+
+
+.social_icons {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: #495736;
+}
+
+/* Media query for større skærme */
+@media (min-width: 768px) {
+  .footer__sections {
+    flex-direction: row; 
+    justify-content: center; 
+    padding-left: 5%;
+    
+  }
+
+  .footer__section {
+    width: 25%; 
+    text-align: left; 
+    padding-left: 5%;
+  }
+}
